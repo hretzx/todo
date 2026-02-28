@@ -1,3 +1,81 @@
+//variables 
+
+$primary_color: #c64a75;
+$primary-hover-color: #2c0714;
+$success-color: #39b87d;
+$success-hover-color: #082d1c;
+$title-color: #623243;
+$bg-color: #b39da5;
+
 body{
-    background-color: aquamarine;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin:0;
+    padding:0;
+    background-color: $bg-color;
+
 }
+
+.content{
+    max-width:800px;
+    margin:50px auto;
+    padding:20px;
+    background-color: aliceblue;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 0 10px rgba($color: #000000, $alpha: 1.0);
+
+    h1{
+        color:$title-color;
+    }
+
+    h4{
+        color: rebeccapurple;
+    }
+
+    table{
+        width:100%;
+        margin-top:20px;
+        border-collapse: collapse;
+
+        th,td{
+            padding:10px;
+            border:1px solid #ccc;
+            th{
+                background-color:#f0f0f0;
+                color:#333;
+            }
+        }
+    }
+
+    a{
+        display:inline-block;
+        padding: 8px 16px;
+        margin:5px;
+        border-radius: 20px;
+        background-color: $primary_color;
+        color:#fff;
+        text-decoration: none;
+        transition: background-color 0.3s ease;
+
+        &:hover{
+            background-color: $primary-hover-color;
+        }
+    }
+
+    input{
+        padding:10px;
+        margin:5px;
+        border: solid 1px;
+        border-radius: 5px;
+    }
+    #add_btn{
+        background-color: $success-color;
+        color:#fff;
+        cursor: pointer;
+        &:hover{
+            background-color:$success-hover-color;
+        }
+    }
+}
+
+
